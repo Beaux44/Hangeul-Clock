@@ -1,0 +1,99 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/default.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: 100vw;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+     -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body:before {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 0;
+}
+
+div.hangulclock {
+	position: absolute;
+    margin: auto;
+    text-align: center;
+    font-size: 2vw;
+	font-family: "Noto Sans CJK KR";
+	color: #FFFFFF;
+	width: 98%;
+	height: 98%;
+	z-index: 10;
+}
+
+
+
+table.clockinside {
+    position: absolute;
+    left: calc(50% - 16vw);
+    top: calc(50% - 12vw);
+}
+
+table.clockinside td {
+	width: 4vw;
+	height: 4vw;
+	font-weight: 400;
+}
+
+td.disabled {
+	color: rgba(255, 255, 255, .20);
+}
+
+td.enabled {
+	color: rgba(255, 255, 255);
+}
+
+td.border {
+	color: rgba(232, 102, 16);
+}
+
+div.message {
+    position: absolute;
+    width: 60vw;
+    left: 20vw;
+    top: calc(50% - 16vw);
+	line-height: 1.25em;
+	font-weight: 100;
+}
+
+div.weekdays {
+    display: flex;
+    position: absolute;
+    left: calc(50% - 5vw);
+    top: calc(50% - 16vh);
+    width: 12vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+}
+
+div.weekborderleft {
+    margin-top: -5vh;
+}
+
+div.weekborderright {
+    margin-top: 5vh;
+}

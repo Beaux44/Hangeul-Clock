@@ -1,0 +1,129 @@
+{
+    "bordercolor": {
+        "type": "color",
+        "text": "Border Color (테두리 색상)",
+        "value": "#FFFFFF"
+    },
+    "clockcolor": {
+        "type": "color",
+        "text": "Clock Color (시계 색상)",
+        "value": "#FFFFFF"
+    },
+    "messagecolor": {
+        "type": "color",
+        "text": "Message Color (메시지 색상)",
+        "value": "#FFFFFF"
+    },
+    "unlitcolor": {
+        "type": "color",
+        "text": "Unlit Clock Color (비활성화된 시간 색상)",
+        "value": "#FFFFFF"
+    },
+    "dim": {
+        "type": "slider",
+        "text": "Background Dimming (배경의 어두운 정도)",
+        "min": 0,
+        "max": 100,
+        "tick": 1,
+        "value": 50
+    },
+    "opacity": {
+        "type": "slider",
+        "text": "Unlit Clock Opacity (비활성화된 시간 불투명 정도)",
+        "min": 0,
+        "max": 100,
+        "tick": 1,
+        "value": 20
+    },
+    "bgseparate": {
+        "type": "checkbox",
+        "text": "Unlit Clock Color (비활성화된 시간 색상 사용)",
+        "value": false
+    },
+    "ampm": {
+        "type": "checkbox",
+        "text": "Display Midnight/Midday or AM/PM",
+        "value": false
+    },
+    "img": {
+        "type": "folderDropdown",
+        "value": "default.jpg",
+        "text": "Background Image (배경 이미지)",
+        "filter": "*.jpg|*.png",
+        "folder": "media"
+    },
+    "glowsection1": {
+        "type": "label",
+        "value": "Glow"
+    },
+    "useglow": {
+        "type": "checkbox",
+        "text": "Use Text Glow",
+        "value": false
+    },
+    "useglowcolor": {
+        "type": "checkbox",
+        "text": "Use Text Glow Color",
+        "value": false
+    },
+    "glowcolor": {
+        "type": "color",
+        "text": "Glow Color",
+        "value": "#FFFFFF"
+    },
+    "glowintensity": {
+        "type": "slider",
+        "text": "Glow Intensity",
+        "min": 1,
+        "max": 4,
+        "tick": 1,
+        "value": 1
+    },
+    "glowspread": {
+        "type": "slider",
+        "text": "Glow Blur",
+        "min": 5,
+        "max": 50,
+        "tick": 1,
+        "value": 10
+    },
+    "msgsection2": {
+        "type": "label",
+        "value": "Message"
+    },
+    "customtext": {
+        "type": "textbox",
+        "text": "Message Text (시계 메시지)",
+        "value": "오늘도 수고했어."
+    },
+    "msgusefile": {
+        "type": "checkbox",
+        "text": "Use file",
+        "value": false
+    },
+    "msgfile": {
+        "type": "folderDropdown",
+        "text": "Message File",
+        "filter": "*.txt",
+        "folder": "media",
+        "value": ""
+    },
+    "msgfreqtype": {
+        "type": "checkbox",
+        "text": "Change Frequency Minutes/Seconds",
+        "value": false
+    },
+    "msgshuffle": {
+        "type": "checkbox",
+        "text": "Shuffle",
+        "value": false
+    },
+    "msgfreq": {
+        "type": "slider",
+        "text": "Message Change Frequency",
+        "min": 5,
+        "max": 1440,
+        "tick": 5,
+        "value": 5
+    }
+}
